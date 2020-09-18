@@ -11,8 +11,4 @@ public class UserLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_login_view);
     }
-
-    public static void main(String[] args) {
-        
-    }
 }
