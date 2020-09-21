@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ZublinHRApplication</string>
+    <string name="strLogin">Login</string>
+    <string name="strRegister">Register</string>
+    <string name="strEmail">Email</string>
+    <string name="strPassword">Password</string>
+    <string name="strEmailExample">abcd@gmail.com</string>
 </resources>
