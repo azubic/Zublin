@@ -9,4 +9,10 @@
     <string name="strLoginNotApproved">Your Login Has Not Yet Been Approved By A Supervisor: Please, Try Again Later</string>
     <string name="strIncorrectAccountRegistration">An Account With That Username Already Exists: Please, Try Another Username</string>
     <string name="strThanksForRegistering">Thanks For Registering: Your Account Will Be Approved Soon</string>
+    <string name="strPendingIdeas">Pending Ideas</string>
+    <string name="strApprovedIdeas">Approved Ideas</string>
+    <string name="strAppName">Besser</string>
+    <string name="strNewIdea">New Idea</string>
+    <string name="strMyIdeas">My Ideas</string>
+    <string name="strGettingInspired">Getting Inspired</string>
 </resources>
