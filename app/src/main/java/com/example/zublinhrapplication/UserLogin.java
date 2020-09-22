@@ -23,15 +23,21 @@ public class UserLogin extends AppCompatActivity {
         final Button btnLogin = (Button) findViewById(R.id.btnLogin);
         final Button btnRegister = (Button) findViewById(R.id.btnRegister);
         //setup text fields
-        final TextView edtEmail = (TextView) findViewById(R.id.edtEmail);
+        final TextView edtUsername = (TextView) findViewById(R.id.edtUsername);
         final TextView edtPassword = (TextView) findViewById(R.id.edtPassword);
 
         //Employee Account Info
         final String employeeUsername = "a";
         final String employeePassword = "a";
+        final int employeeApproved = 1;
         //Reviewer Account Info
         final String reviewerUsername = "b";
         final String reviewerPassword = "b";
+        final int reviewerApproved = 1;
+        //New Account
+        final String accountUsername = "c";
+        final String accountPassword = "c";
+        final int accountApproved = 0;
 
         //login button method
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -39,7 +45,7 @@ public class UserLogin extends AppCompatActivity {
             public void onClick(View v) {
 
                 //pulls text from fields
-                final String username = edtEmail.getText().toString();
+                final String username = edtUsername.getText().toString();
                 final String password = edtPassword.getText().toString();
 
                 if (username.equals(employeeUsername) && password.equals(employeePassword)) {
@@ -52,11 +58,17 @@ public class UserLogin extends AppCompatActivity {
                     Intent switchToReviewer = new Intent(v.getContext(), Reviewer.class);
                     startActivity(switchToReviewer);
                 }
+                else if (username.equals(accountUsername) && password.equals(accountPassword) && accountApproved == 0) {
+                    //Inform user that account has not yet been approved by supervisor
+                    Toast.makeText(v.getContext(), R.string.strLoginNotApproved, 2).show();
+                    edtUsername.setText("");
+                    edtPassword.setText("");
+                }
                 else {
                     //inform user of incorrect password attempt
-                    Toast.makeText(v.getContext(), "Incorrect Password: Please, Try Again", 2).show();
+                    Toast.makeText(v.getContext(), R.string.strIncorrectPasswordToast, 2).show();
                     //reset text fields
-                    edtEmail.setText("");
+                    edtUsername.setText("");
                     edtPassword.setText("");
                 }
             }
