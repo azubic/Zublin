@@ -14,4 +14,7 @@
     <string name="strNewIdea">New Idea</string>
     <string name="strMyIdeas">My Ideas</string>
     <string name="strGettingInspired">Getting Inspired</string>
+    <string name="strMyIdea">My Idea</string>
+    <string name="strInspired">Getting Inspired</string>
+    <string name="strProfile"><![CDATA[My Profile & Badges]]></string>
 </resources>
