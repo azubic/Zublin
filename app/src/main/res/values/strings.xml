@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Besser</string>
+    <string name="strLogin">Login</string>
+    <string name="strRegister">Register</string>
+    <string name="strUsername">Username</string>
+    <string name="strPassword">Password</string>
+    <string name="strName">Name</string>
+    <string name="strIncorrectPasswordToast">Incorrect Password: Please, Try Again</string>
+    <string name="strLoginNotApproved">Your Login Has Not Yet Been Approved By A Supervisor: Please, Try Again Later</string>
+    <string name="strIncorrectAccountRegistration">An Account With That Username Already Exists: Please, Try Another Username</string>
+    <string name="strThanksForRegistering">Thanks For Registering: Your Account Will Be Approved Soon</string>
+    <string name="strPendingIdeas">Pending Ideas</string>
+    <string name="strApprovedIdeas">Approved Ideas</string>
+    <string name="strNewIdea">New Idea</string>
+    <string name="strMyIdeas">My Ideas</string>
+    <string name="strGettingInspired">Getting Inspired</string>
+    <string name="strMyIdea">My Idea</string>
+    <string name="strInspired">Getting Inspired</string>
+    <string name="strProfile"><![CDATA[My Profile & Badges]]></string>
+</resources>
